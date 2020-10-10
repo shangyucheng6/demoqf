@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, html {
+  height: 100%;
+  width: 100%; }
+
+nav {
+  width: 100%;
+  background-color: burlywood;
+  height: 146px; }
+  nav .navtop {
+    height: 40px;
+    background: url("../images/navbg1.png") no-repeat; }
+    nav .navtop .navtopson {
+      width: 820px;
+      height: 460px;
+      background-color: red;
+      margin-left: 600px;
+      background: url("../images/navbg11.png") no-repeat;
+      display: none; }
+  nav .navcenter {
+    height: 50px;
+    background-color: blue; }
+    nav .navcenter .navCtleft {
+      height: 46px;
+      background: url("../images/navCtle.png") no-repeat;
+      width: 168px;
+      display: inline-block; }
+    nav .navcenter .navCtcenter {
+      height: 46px;
+      width: 1160px;
+      display: inline-block;
+      background-color: blueviolet;
+      margin: 0 96px; }
+    nav .navcenter .navCtright {
+      height: 46px;
+      width: 370px;
+      display: inline-block;
+      background: url("../images/navcerg.png") no-repeat; }
+  nav .navfoot {
+    height: 60px;
+    background-color: red;
+    position: relative; }
+    nav .navfoot .menu {
+      width: 200px;
+      height: 60px;
+      background-color: green;
+      position: absolute;
+      left: 100px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 30px; }
+    nav .navfoot .menufirst {
+      position: absolute;
+      top: 60px;
+      left: 100px;
+      width: 200px;
+      height: 150px;
+      background-color: blue;
+      display: none; }
+      nav .navfoot .menufirst li {
+        height: 50px;
+        width: 200px;
+        text-align: center;
+        line-height: 50px; }
+      nav .navfoot .menufirst .menuac {
+        background-color: hotpink; }
+    nav .navfoot .menutwo {
+      position: absolute;
+      top: 60px;
+      left: 300px;
+      width: 200px;
+      height: 150px; }
+      nav .navfoot .menutwo li {
+        height: 50px;
+        width: 200px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        background-color: hotpink; }
+      nav .navfoot .menutwo ul {
+        display: none; }
+    nav .navfoot .navfootright {
+      width: 640px;
+      height: 60px;
+      background-color: greenyellow;
+      float: right; }
+      nav .navfoot .navfootright button {
+        float: left;
+        background-color: honeydew;
+        margin-left: 6px;
+        width: 100px;
+        height: 60px;
+        font-size: 30px;
+        line-height: 60px;
+        text-align: center; }
+
+.alert {
+  margin: 0px 0px 10px 0px;
+  padding: 5px;
+  text-align: center;
+   }
+
+.containerRL {
+  width: 380px;
+  height: 416px;
+  position: absolute;
+  left: 2200px;
+  top: 154px; 
+  }
+  .containerRL .containerR {
+    width: 380px;
+    height: 316px; 
+    display: none;
+  }
+  .containerRL .containerL {
+    width: 380px;
+    height: 316px; 
+    display: none;
+   }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li, a {
+  list-style: none;
+  text-decoration: none; }
+
+.box {
+  width: 1500px;
+  height: 300px;
+  margin: 10px auto;
+  border: 4px solid black;
+  position: relative;
+  overflow: hidden;
+  margin-left: 672px; }
+
+.box ul {
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  left: -1500px; }
+
+.box ul li {
+  width: 1500px;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 160px; }
+  .box ul li img {
+    width: 1500px; }
+
+.box ol {
+  width: 1500px;
+  height: 50px;
+  background-color: blanchedalmond;
+  position: absolute;
+  bottom: 0;
+  left: 0px; }
+
+.box ol li {
+  width: 750px;
+  height: 50px;
+  background-color: brown;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  opacity: 0.3; }
+
+.box ol li.active {
+  background-color: black;
+  opacity: 1; }
+
+.box .sbox {
+  width: 1500px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.box .sbox a {
+  width: 50px;
+  height: 100px;
+  background-color: cornsilk;
+  opacity: 50%;
+  line-height: 100px;
+  align-items: center;
+  font-size: 50px; }
+
+.enlarge {
+  width: 696px;
+  height: 600px;
+  position: absolute;
+  top: 480px;
+  left: -20px;
+  display: none; }
+  .enlarge img {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+
+header {
+  width: 1500px;
+  height: 1200px;
+  background-color: hotpink;
+  margin: 10px auto; }
+  header .headleft {
+    width: 1180px;
+    height: 1180px;
+    float: left;
+    background-color: blue; }
+    header .headleft .headlfti {
+      width: 1180px;
+      height: 50px;
+      background-color: hotpink;
+      font-size: 50px; }
+    header .headleft .headlf1, header .headleft .headlf2 {
+      width: 1180px;
+      height: 360px;
+      background-color: greenyellow;
+      position: relative; }
+      header .headleft .headlf1 .headlf11, header .headleft .headlf2 .headlf11 {
+        width: 290px;
+        height: 350px;
+        background-color: blue;
+        float: left;
+        margin-left: 2px; }
+        header .headleft .headlf1 .headlf11 a, header .headleft .headlf2 .headlf11 a {
+          width: 100px;
+          height: 100px;
+          position: absolute; }
+        header .headleft .headlf1 .headlf11 img, header .headleft .headlf2 .headlf11 img {
+          width: 290px;
+          height: 250px;
+          background-color: indigo; }
+        header .headleft .headlf1 .headlf11 .pname, header .headleft .headlf2 .headlf11 .pname {
+          font-size: 30px; }
+          header .headleft .headlf1 .headlf11 .pname span, header .headleft .headlf2 .headlf11 .pname span {
+            color: red;
+            float: right;
+            margin-right: 20px;
+            font-size: 40px; }
+        header .headleft .headlf1 .headlf11 .pnews, header .headleft .headlf2 .headlf11 .pnews {
+          font-size: 18px; }
+        header .headleft .headlf1 .headlf11 .btnadd, header .headleft .headlf2 .headlf11 .btnadd {
+          width: 150px;
+          height: 30px;
+          margin-top: 20px;
+          margin-left: 50px; }
+    header .headleft .headlf2 {
+      width: 1180px;
+      height: 700px;
+      background-color: gold; }
+      header .headleft .headlf2 div {
+        width: 290px;
+        height: 350px;
+        background-color: green;
+        float: left;
+        margin: 1px; }
+  header .headright {
+    width: 310px;
+    height: 1200px;
+    float: left;
+    background-color: red; }
+    header .headright .headrt1 {
+      width: 310px;
+      height: 370px;
+      background-color: indigo;
+      margin-top: 10px; }
+      header .headright .headrt1 img {
+        width: 310px;
+        height: 260px;
+        background-color: indigo; }
+      header .headright .headrt1 .pname1 {
+        font-size: 30px; }
+        header .headright .headrt1 .pname1 span {
+          color: red;
+          margin-left: 30px;
+          font-size: 40px; }
+      header .headright .headrt1 .pnews1 {
+        font-size: 18px; }
+      header .headright .headrt1 .btnadd {
+        width: 150px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50px; }
+
+.shop {
+  width: 2px;
+  height: 1000px;
+  background-color: blue;
+  float: right;
+  margin-top: -1534px;
+  overflow: auto; }
+  .shop .shopcar {
+    width: 500px;
+    height: 200px; }
+    .shop .shopcar .shopcar_pic {
+      width: 250px;
+      height: 200px;
+      background-color: green; }
+    .shop .shopcar .shopcar_tit {
+      float: right;
+      background-color: red;
+      height: 200px;
+      width: 250px;
+      font-size: 30px; }
+      .shop .shopcar .shopcar_tit p {
+        margin-top: 10px; }
+      .shop .shopcar .shopcar_tit button {
+        width: 100px;
+        height: 40px;
+        font-size: 30px; }
+      .shop .shopcar .shopcar_tit .shopcar_reduce {
+        margin-right: 40px; }
+      .shop .shopcar .shopcar_tit .shopcar_delete {
+        width: 200px;
+        height: 40px;
+        margin-left: 28px; }
+
+#ball {
+  width: 50px;
+  height: 50px;
+  display: none;
+  border-radius: 50%;
+  background-color: greenyellow; }
+
+footer {
+  width: 1500px;
+  height: 282px;
+  background-color: red;
+  margin: auto; }
+  footer img {
+    width: 100%;
+    height: 100%; }

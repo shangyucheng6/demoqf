@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+    <title>firstPage</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type = "text/javascript" src="./js/jquery-1.11.3.js"></script>
+    <script type = "text/javascript" src="./js/jquery.cookie.js"></script>
+    <script type = "text/javascript" src="./js/parabola.js"></script>
+    <script  type = "text/javascript" src="./js/index.js"></script>
+    <script  type = "text/javascript" src="./js/shop.js"></script>
+    <script  type = "text/javascript" src="./js/ajax.js"></script>
+</head>
+<body>
+    <nav>
+        <section class="navtop">
+            <section class="navtopson"></section>
+        </section>
+        <section class="navcenter">
+            <div class="navCtleft">1</div>
+            <div class="navCtcenter">2</div>
+            <div class="navCtright">3</div>
+        </section>
+        <section class="navfoot">
+            <!-- 下拉菜单部分 -->
+          
+            <div class="menu">导航目录</div>
+            <div class="menu12">
+               <!--  <ul class="menufirst">     
+                <li class="lii">手机</li>
+                <li  class="lii">电脑</li>
+                <li  class="lii">平板</li>
+            </ul>
+            <div class="menutwo">
+            <ul class="mt1">
+                <li>华为手机</li>
+                <li>苹果手机</li>
+                <li>小米手机</li>
+            </ul>
+            <ul  class="mt2">
+                <li>联想电脑</li>
+                <li>戴尔电脑</li>
+                <li>神州电脑</li>
+            </ul>
+            <ul class="mt3">
+                <li>苹果平板</li>
+                <li>华为平板</li>
+                <li>步步高平板</li>
+            </ul>
+            </div>  -->
+        </div>
+            <div class="navfootright">
+                <button class="navfootright1"> 
+                   <!--  <a href="http://localhost/9.9register/2login.html">登录</a> -->
+                   登录
+                </button>
+                <button class="navfootright2">
+                    <!-- <a href="http://localhost/9.9register/1register.html">注册</a> -->
+                    注册
+                </button>
+                <button  class="navfootright3">购物车</button>
+                <button  class="navfootright4">0</button>
+                <button  class="navfootright5">0</button>
+                <button  class="navfootright6">清空</button>
+            </div>
+        </section>
+    </nav>
+    <!-- 注册 和登录界面 -->
+    <div class='containerRL'>
+       <!--  注册 -->
+    <div class = 'container containerR'>
+        <div class = 'panel panel-primary' id = 'register'>
+          <div class = 'panel-heading'>
+            注册
+          </div>
+          <div class = 'panel-body'>
+            <div class = 'form-group'>
+              <label for="username">用户名：</label>
+              <input type="text" name = 'username' placeholder="用户名" class = 'form-control'>
+            </div>
+            <div class = 'form-group'>
+              <label for="password">密码：</label>
+              <input type="text" name = 'password' placeholder="密码" class = 'form-control'>
+            </div>
+            <div class = 'form-group'>
+              <label for="repassword">确认密码：</label>
+              <input type="text" name = 'repassword' placeholder="确认密码" class = 'form-control'>
+            </div>
+            <div class="alert alert-danger" role="alert">...</div>
+            <button class="gol">马上登录</button>
+            <button class = 'btn btn-primary pull-right' id = 'btn1'>注册</button>
+          </div>
+        </div>
+      </div>  
+      <!-- 登录 -->
+      <div class = 'container containerL'>
+        <div class = 'panel panel-primary' id = 'register'>
+          <div class = 'panel-heading'>
+            登录
+          </div>
+          <div class = 'panel-body'>
+            <div class = 'form-group'>
+              <label for="username">用户名：</label>
+              <input type="text" name = 'username' placeholder="用户名" class = 'form-control'>
+            </div>
+            <div class = 'form-group'>
+              <label for="password">密码：</label>
+              <input type="text" name = 'password' placeholder="密码" class = 'form-control'>
+            </div>
+          
+            <div class="alert alert-danger" role="alert">...</div>
+            <button class="goR">马上注册</button>
+            <button class = 'btn btn-primary pull-right' id = 'btn2'>登录</button>
+          </div>
+        </div>
+      </div> 
+    </div>
+    
+    <!-- 轮播图 -->
+    <div class="box">
+        <ul>
+            <li ><img src="./images/tab2.jpg" alt=""></li>
+            <li ><img src="./images/tab1.jpg" alt=""></li>
+            <li ><img src="./images/tab2.jpg" alt=""></li>
+            <li ><img src="./images/tab1.jpg" alt=""></li>
+        </ul>
+        <ol>
+            <li class="active">1</li>
+            <li>2</li>
+        </ol>
+        <div class="sbox">
+            <a href="#"><</a>
+            <a href="#">></a>
+        </div>
+    </div>
+   
+   
+    <header>
+         <!-- 放大镜 -->
+        <div class="enlarge">
+           <!--  <img src="`${id.img}`" alt=""> -->
+          
+        </div>
+        <main class="headleft">
+            <p class="headlfti">镇店之宝</p>
+            <div class="headlf1">
+                 <!--   <div class="headlf11">
+                   
+                      <a href="http://localhost/9.9register/open.html"></a>
+                      <img src="${arr[i].img}" alt="">
+             
+                  
+                <p class="pname">${arr[i].title} <span>${arr[i].price}</span></p>
+                <p class="pnews">解释</p>
+                <button class="btnadd" id = "${arr[i].id}">加入购物车</button>
+            </div> 
+               <div class="headlf11"></div>
+                <div class="headlf11"></div>
+                <div class="headlf11"></div> -->
+            </div>
+
+
+            <p class="headlfti">猜你喜欢</p>
+            <div class="headlf2">
+                <!-- <div class="headlf11">
+                    <img src="images\navCtle.png" alt=""> 
+                    <p class="pname">产品名字 <span>价格</span></p>
+                    <p class="pnews">解释</p>
+                    <button class="btnadd">加入购物车</button>
+                </div> 
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div> -->
+            </div>
+           
+           
+        </main>
+        <main class="headright">
+            
+            <!-- <div class="headrt1">
+                <img src="${arr[i].img}" alt="">
+                <p class="pname1">"${arr[i].title}" <span>${arr[i].price}</span></p>
+                <p class="pnews1">解释</p>
+                <button class="btnadd">加入购物车</button>
+            </div> 
+       <div class="headrt1"></div>
+            <div class="headrt1"></div> -->
+            
+        </main>
+    </header>
+    <div class="shop">
+        
+            <!-- <div class="shopcar" id="${newArr[i].id}">
+                <img src="./${newArr[i].img}" alt="" class="shopcar_pic">
+                <div class="shopcar_tit">
+                    <p>商品名称: <span>${newArr[i].title} </span></p>
+                    <p>价格:<span>${newArr[i].price}</span></p>
+                    <p class = "shopnum">数量:${newArr[i].num}</p>
+                <button class="shopcar_ud">-</button>
+                <button class="shopcar_ud">+</button>
+                <button class="shopcar_delete">删除</button>
+                </div>
+            </div>-->
+      
+
+    </div>
+    <!-- 小球 -->
+    <div id="ball"></div>
+
+    <footer>
+        <section class="foottop"><img src="images\footbj.png" alt=""></section>
+    </footer>
+</body>
+
+</html>

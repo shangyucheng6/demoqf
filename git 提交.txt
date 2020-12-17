@@ -1,0 +1,43 @@
+git checkout -b shangyucheng
+
+ git clone http://172.16.200.91/front-end/ymhy-apts-web.git
+
+git pull
+
+git add .
+
+git commit -m '提交信息'
+
+git push
+
+git pull
+-------------------------------------------------
+
+新建项目文件夹
+
+git初始化   git init
+
+添加远程仓库地址  git remote add  origin 《git 地址》
+
+拉取线上代码  git pull origin master
+
+创建本地分支  git checkout -b  本地分支名称 
+
+修改代码
+
+
+git status
+
+git add .
+
+git commit -m ''
+
+git push origin master:shangyucheng
+	        本地分支名称：远程分支名称
+
+
+
+git branch
+
+所在分支 前有星号
+
